@@ -44,10 +44,11 @@ public class Main {
         
         // Connect
 
+
+      
+        //org.openfast.session.tcp.TcpEndpoint endpoint = new TcpEndpoint(host, port);
   
-        org.openfast.session.tcp.TcpEndpoint endpoint = new TcpEndpoint(host, port);
-  
-        Connection c  = endpoint.connect();
+        //Connection c  = endpoint.connect();
 
         final Socket socket = new Socket(host, port);      
  
