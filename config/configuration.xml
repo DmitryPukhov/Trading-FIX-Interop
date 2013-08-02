@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="util/rts2html.xsl" type="text/xsl"?><configuration type="certification" label="Certification Production Like">
+
+	
+
+	
+
+	  <MarketDataGroup feedType="RTS-0" marketID="F" marketDepth="0" label="All Price Levels for Futures">
+
+                <connections>
+                        <connection>
+                                <type>Incremental</type>
+                                <protocol>UDP/IP</protocol>
+                                <ip>239.1.1.37</ip>
+                                <port>4489</port>
+                                <feed>A</feed>
+                        </connection>
+                        <!--Feed B removed-->
+
+                        <connection>
+                                <type>Snapshot</type>
+                                <protocol>UDP/IP</protocol>
+                                <ip>239.1.1.12</ip>
+                                <port>4498</port>
+                                <feed>A</feed>
+                        </connection>
+                        <!--Feed B removed-->
+
+                        <connection>
+                                <type>Historical Replay</type>
+                                <protocol>TCP/IP</protocol>
+                                <ip>172.17.30.77</ip>
+                                <port>5100</port>
+                                <feed>A</feed>
+                        </connection>
+                </connections>
+        </MarketDataGroup>
+
+  <MarketDataGroup feedType="RTS-1" marketID="F" marketDepth="1" label="Top of book">
+
+        <connections>
+                <connection>
+                        <type>Incremental</type>
+                        <protocol>UDP/IP</protocol>
+                        <ip>239.1.1.54</ip>
+                        <port>4499</port>
+                        <feed>A</feed>
+                </connection>
+                <!--Feed B removed-->
+
+                <connection>
+                        <type>Snapshot</type>
+                        <protocol>UDP/IP</protocol>
+                        <ip>239.1.1.55</ip>
+                        <port>4498</port>
+                        <feed>A</feed>
+                </connection>
+                <!--Feed B removed-->
+
+                <connection>
+                        <type>Historical Replay</type>
+                        <protocol>TCP/IP</protocol>
+                        <ip>172.17.30.77</ip>
+                        <port>5109</port>
+                        <feed>A</feed>
+                </connection>
+        </connections>
+</MarketDataGroup>
+
+
+	<MarketDataGroup feedType="RTS-5" marketID="F" marketDepth="5" label="Top 5 Price Levels for Futures">
+
+		<connections>
+			<connection>
+				<type>Incremental</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.5</ip>
+				<port>4411</port>
+				<feed>A</feed>
+			</connection>
+			<!--Feed B removed-->
+
+			<connection>
+				<type>Snapshot</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.6</ip>
+				<port>4421</port>
+				<feed>A</feed>
+			</connection>
+			<!--Feed B removed-->
+
+			<connection>
+				<type>Historical Replay</type>
+				<protocol>TCP/IP</protocol>
+				<ip>172.17.30.77</ip>
+				<port>5101</port>
+				<feed>A</feed>
+			</connection>
+		</connections>
+	</MarketDataGroup>
+  
+
+ <MarketDataGroup feedType="RTS-10" marketID="F" marketDepth="10" label="Top 10 Price Levels for Futures">
+
+           <connections>
+                   <connection>
+                           <type>Incremental</type>
+                           <protocol>UDP/IP</protocol>
+                           <ip>239.1.1.5</ip>
+                           <port>4451</port>
+                           <feed>A</feed>
+                   </connection>
+                   <!--Feed B removed-->
+
+                   <connection>
+                           <type>Snapshot</type>
+                           <protocol>UDP/IP</protocol>
+                           <ip>239.1.1.6</ip>
+                           <port>4461</port>
+                           <feed>A</feed>
+                   </connection>
+                   <!--Feed B removed-->
+
+                   <connection>
+                           <type>Historical Replay</type>
+                           <protocol>TCP/IP</protocol>
+                           <ip>172.17.30.77</ip>
+                           <port>5102</port>
+                           <feed>A</feed>
+                   </connection>
+           </connections>
+   </MarketDataGroup>
+
+	<MarketDataGroup feedType="RTS-5" marketID="O" marketDepth="5" label="Top 5 Price Levels for Options">
+
+		<connections>
+			<connection>
+				<type>Incremental</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.7</ip>
+				<port>4411</port>
+				<feed>A</feed>
+			</connection>
+			<!--Feed B removed-->
+
+			<connection>
+				<type>Snapshot</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.8</ip>
+				<port>4421</port>
+				<feed>A</feed>
+			</connection>
+			<!--Feed B removed-->
+
+			<connection>
+				<type>Historical Replay</type>
+				<protocol>TCP/IP</protocol>
+				<ip>172.17.30.77</ip>
+				<port>5103</port>
+				<feed>A</feed>
+			</connection>
+		</connections>
+	</MarketDataGroup>
+
+
+
+  <MarketDataGroup feedType="RTS-1" marketID="O" marketDepth="1" label="Top of Book for Option">
+
+          <connections>
+                  <connection>
+                          <type>Incremental</type>
+                          <protocol>UDP/IP</protocol>                                         
+                          <ip>239.1.1.56</ip>
+                          <port>4411</port>
+                          <feed>A</feed>
+                  </connection>
+                  <!--Feed B removed-->
+
+                  <connection>
+                          <type>Snapshot</type>
+                          <protocol>UDP/IP</protocol>
+                          <ip>239.1.1.57</ip>
+                          <port>4421</port>
+                          <feed>A</feed>
+                  </connection>
+                  <!--Feed B removed-->
+
+                  <connection>
+                          <type>Historical Replay</type>
+                          <protocol>TCP/IP</protocol>
+                          <ip>172.17.30.77</ip>
+                          <port>5110</port>
+                          <feed>A</feed>
+                  </connection>
+          </connections>
+  </MarketDataGroup>
+
+	<MarketDataGroup feedType="RTS-TRADES" marketID="F" label="Trades for Futures">
+		<connections>
+			<connection>
+				<type>Incremental</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.13</ip>
+				<port>4411</port>
+				<feed>A</feed>
+			</connection>
+			<!--Feed B removed-->
+
+			<connection>
+				<type>Snapshot</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.14</ip>
+				<port>4421</port>
+				<feed>A</feed>
+			</connection>
+			<!--Feed B removed-->
+
+			<connection>
+				<type>Historical Replay</type>
+				<protocol>TCP/IP</protocol>
+				<ip>172.17.30.77</ip>
+				<port>5104</port>
+				<feed>A</feed>
+			</connection>
+		</connections>
+	</MarketDataGroup>
+
+	<MarketDataGroup feedType="RTS-TRADES" marketID="O" label="Trades for Options">
+		<connections>
+			<connection>
+				<type>Incremental</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.15</ip>
+				<port>4411</port>
+				<feed>A</feed>
+			</connection>
+			<!--Feed B removed-->
+
+			<connection>
+				<type>Snapshot</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.16</ip>
+				<port>4421</port>
+				<feed>A</feed>
+			</connection>
+			<!--Feed B removed-->
+
+			<connection>
+				<type>Historical Replay</type>
+				<protocol>TCP/IP</protocol>
+				<ip>172.17.30.77</ip>
+				<port>5105</port>
+				<feed>A</feed>
+			</connection>
+		</connections>
+
+	</MarketDataGroup>
+
+	<MarketDataGroup feedType="RTS-INSTR" marketID="O" label="All Options defintion">
+
+		<connections>
+			<connection>
+				<type>Instrument Replay</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.17</ip>
+				<port>4431</port>
+				<feed>A</feed>
+			</connection>
+ <connection>
+         <type>Volatility</type>
+         <protocol>UDP/IP</protocol>
+         <ip>239.1.1.11</ip>
+         <port>4499</port>
+         <feed>A</feed>
+  
+ </connection>
+			<!--Feed B removed-->
+		</connections>
+	</MarketDataGroup>
+
+	<MarketDataGroup feedType="RTS-INSTR" marketID="F" label="All Futures/Stocks defintion">
+
+		<connections>
+			<connection>
+				<type>Instrument Replay</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.18</ip>
+				<port>4431</port>
+				<feed>A</feed>
+			</connection>
+			<!--Feed B removed-->
+		</connections>
+	</MarketDataGroup>
+
+	<!-- Spot: -->
+
+	<MarketDataGroup feedType="RTS-5" marketID="S" marketDepth="5" label="Top 5 Price Levels for Spot">
+
+		<connections>
+			<connection>
+				<type>Incremental</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.1</ip>
+				<port>4411</port>
+				<feed>A</feed>
+			</connection>
+			<!--Feed B removed-->
+
+			<connection>
+				<type>Snapshot</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.2</ip>
+				<port>4421</port>
+				<feed>A</feed>
+			</connection>
+			<!--Feed B removed-->
+
+			<connection>
+				<type>Historical Replay</type>
+				<protocol>TCP/IP</protocol>
+				<ip>172.17.30.77</ip>
+				<port>5106</port>
+				<feed>A</feed>
+			</connection>
+		</connections>
+	</MarketDataGroup>
+
+
+
+
+<MarketDataGroup feedType="RTS-1" marketID="S" marketDepth="1" label="Top of Book for Spot">
+
+        <connections>
+                <connection>
+                        <type>Incremental</type>
+                        <protocol>UDP/IP</protocol>
+                        <ip>239.1.1.59</ip>
+                        <port>4411</port>
+                        <feed>A</feed>
+                </connection>
+                <!--Feed B removed-->
+
+                <connection>
+                        <type>Snapshot</type>
+                        <protocol>UDP/IP</protocol>
+                        <ip>239.1.1.60</ip>
+                        <port>4421</port>
+                        <feed>A</feed>
+                </connection>
+ <connection>
+         <type>Historical Replay</type>
+         <protocol>TCP/IP</protocol>
+         <ip>172.17.30.77</ip>
+         <port>5111</port>
+         <feed>A</feed>
+ </connection>
+                <!--Feed B removed-->
+        </connections>
+</MarketDataGroup>
+
+	<MarketDataGroup feedType="RTS-TRADES" marketID="S" label="Trades for Spot">
+
+		<connections>
+			<connection>
+				<type>Incremental</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.3</ip>
+				<port>4411</port>
+				<feed>A</feed>
+			</connection>
+			<!--Feed B removed-->
+
+			<connection>
+				<type>Snapshot</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.4</ip>
+				<port>4421</port>
+				<feed>A</feed>
+			</connection>
+			<!--Feed B removed-->
+
+			<connection>
+				<type>Historical Replay</type>
+				<protocol>TCP/IP</protocol>
+				<ip>172.17.30.77</ip>
+				<port>5107</port>
+				<feed>A</feed>
+			</connection>
+		</connections>
+	</MarketDataGroup>
+
+	<MarketDataGroup feedType="RTS-INSTR" marketID="S" label="RTS Classica instruments">
+
+		<connections>
+			<connection>
+				<type>Instrument Replay</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.19</ip>
+				<port>4431</port>
+				<feed>A</feed>
+			</connection>
+			<!--Feed B removed-->
+		</connections>
+	</MarketDataGroup>
+
+	<MarketDataGroup feedType="RTS-INDEX" marketID="I" label="RTS Index">
+		<connections>
+			<connection>
+				<type>Incremental</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.9</ip>
+				<port>4411</port>
+				<feed>A</feed>
+			</connection>
+			<!--Feed B removed-->
+
+			<connection>
+				<type>Snapshot</type>
+				<protocol>UDP/IP</protocol>
+				<ip>239.1.1.10</ip>
+				<port>4421</port>
+				<feed>A</feed>
+			</connection>
+
+
+               <connection>
+                  <type>Historical Replay</type>
+                  <protocol>TCP/IP</protocol>
+                  <ip>172.17.30.77</ip>
+                  <port>5108</port>
+                  <feed>A</feed>
+               </connection>
+			<!--Feed B removed-->
+		</connections>
+	</MarketDataGroup>
+
+
+
+  <MarketDataGroup feedType="RTS-INSTR" marketID="I" label="RTS Index">
+
+          <connections>
+                  <connection>
+                          <type>Instrument Replay</type>
+                          <protocol>UDP/IP</protocol>
+                          <ip>239.1.1.33</ip>
+                          <port>4431</port>
+                          <feed>A</feed>
+                  </connection>
+                  <!--Feed B removed-->
+          </connections>
+  </MarketDataGroup>
+
+
+        <MarketDataGroup feedType="RTS-NEWS" marketID="S" label="News feed">
+                <connections>
+                        <connection>
+                                <type>News</type>
+                                <protocol>UDP/IP</protocol>
+                                <ip>239.1.1.20</ip>
+                                <port>4432</port>
+                                <feed>A</feed>
+                        </connection>
+                </connections>
+        </MarketDataGroup>
+
+
+
+	
+
+</configuration>
