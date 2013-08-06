@@ -46,12 +46,12 @@ public class Main {
 
 
       
-        org.openfast.session.tcp.TcpEndpoint endpoint = new TcpEndpoint(host, port);
+        //org.openfast.session.tcp.TcpEndpoint endpoint = new TcpEndpoint(host, port);
   
-        Connection c  = endpoint.connect();
+        //Connection c  = endpoint.connect();
 
         final Socket socket = new Socket(host, port);      
-        System.out.println("Socket created");
+ 
         // Create input stream
         MessageInputStream inputStream = new MessageInputStream(socket.getInputStream(), context);
         inputStream.setBlockReader(new MessageBlockReader(){
